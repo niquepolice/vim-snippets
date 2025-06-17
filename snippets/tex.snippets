@@ -330,10 +330,8 @@ snippet sum \sum^{}_{}
 	\\sum^{${1:n}}_{${2:i=1}} ${0}
 snippet lim \lim_{}
 	\\lim_{${1:n \\to \\infty}} ${0}
-snippet frame frame environment
-	\\begin{frame}[${1:t}]
-		\frametitle{${2:title}}
-		\framesubtitle{${3:subtitle}}
+snippet fr frame environment
+	\\begin{frame}{${1:title}}
 		${0:${VISUAL}}
 	\\end{frame}
 snippet block block environment
