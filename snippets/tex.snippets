@@ -139,11 +139,11 @@ snippet mat smart matrix environment
 		${0:${VISUAL}}
 	\\end{$1matrix}
 # Cases
-snippet cas cases environment
-	\\begin{cases}
-		${1:equation}, &\\text{ if }${2:case}\\
-		${0:${VISUAL}}
-	\\end{cases}
+# snippet cas cases environment
+# 	\\begin{cases}
+# 		${1:equation}, &${2:case}\\\\
+# 		${0:${VISUAL}}
+# 	\\end{cases}
 # Split
 snippet spl split environment
 	\\begin{split}
@@ -249,6 +249,8 @@ snippet ita italic text
 	\\textit{${1:${VISUAL:text}}}${0}
 snippet bf bold face text
 	\\textbf{${1:${VISUAL:text}}}${0}
+snippet mb bold face text
+	\\mathbf{${1:${VISUAL:text}}}${0}
 snippet under underline text
 	\\underline{${1:${VISUAL:text}}}${0}
 snippet over overline text
@@ -348,10 +350,10 @@ snippet example exampleblock environment
 	\\begin{exampleblock}{${1:title}}
 		${0:${VISUAL}}
 	\\end{exampleblock}
-snippet col2 two-column environment
+snippet col two-column environment
 	\\begin{columns}
 		\\begin{column}{0.5\\textwidth}
-			${1}
+			${1:${VISUAL}}
 		\\end{column}
 		\\begin{column}{0.5\\textwidth}
 			${0}

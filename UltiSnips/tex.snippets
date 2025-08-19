@@ -145,6 +145,13 @@ endsnippet
 # MATH #
 ########
 
+snippet cas "case" w
+\begin{cases}
+	${1:${VISUAL}}, & ${2:cond1}, \\
+	${3:val2}, & ${4:cond2}, \\
+\end{cases}
+endsnippet
+
 snippet cc "subset" w
 \subset 
 endsnippet
@@ -188,7 +195,7 @@ snippet dm "Display Math" w
 endsnippet
 
 snippet ff "Fraction" w
-\frac{$1}{$2}$0
+\frac{${1:${VISUAL}}}{$2}$0
 endsnippet
 
 snippet compl "Complement" i
